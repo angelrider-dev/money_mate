@@ -1,0 +1,3837 @@
+{
+  "elements": {
+    "AppDatabase": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "AppDatabase"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 12414,
+        "name": "AppDatabase"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "categories"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "groups"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "members"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "group_members"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expenses"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expense_splits"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "budgets"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "settlements"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "users"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "income_sources"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "income"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "savings_goals"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "savings_contributions"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "app_settings"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "accounts"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "account_transfers"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "recurring_rules"
+        }
+      ],
+      "type": "database",
+      "tables": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "categories"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "groups"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "members"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "group_members"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expenses"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expense_splits"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "budgets"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "settlements"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "users"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "income_sources"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "income"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "savings_goals"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "savings_contributions"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "app_settings"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "accounts"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "account_transfers"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "recurring_rules"
+        }
+      ],
+      "views": [],
+      "includes": [],
+      "queries": [],
+      "schema_version": 1,
+      "daos": [],
+      "has_constructor_arg": true
+    },
+    "categories": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "categories"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 272,
+        "name": "Categories"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 315,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "name",
+          "nameInDart": "name",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 367,
+            "name": "name"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "icon",
+          "nameInDart": "icon",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 402,
+            "name": "icon"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "color_hex",
+          "nameInDart": "colorHex",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 460,
+            "name": "colorHex"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_archived",
+          "nameInDart": "isArchived",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 499,
+            "name": "isArchived"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Categories",
+      "row_class_name": "Category",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "groups": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "groups"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 632,
+        "name": "Groups"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 671,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "name",
+          "nameInDart": "name",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 723,
+            "name": "name"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "created_at",
+          "nameInDart": "createdAt",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 762,
+            "name": "createdAt"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_archived",
+          "nameInDart": "isArchived",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 838,
+            "name": "isArchived"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Groups",
+      "row_class_name": "Group",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "members": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "members"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 1161,
+        "name": "Members"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 1201,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "name",
+          "nameInDart": "name",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 1253,
+            "name": "name"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "avatar_color",
+          "nameInDart": "avatarColor",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 1288,
+            "name": "avatarColor"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_current_user",
+          "nameInDart": "isCurrentUser",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 1341,
+            "name": "isCurrentUser"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_archived",
+          "nameInDart": "isArchived",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 1423,
+            "name": "isArchived"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Members",
+      "row_class_name": "Member",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "group_members": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "group_members"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 1546,
+        "name": "GroupMembers"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "groups"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "members"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "group_id",
+          "nameInDart": "groupId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 1591,
+            "name": "groupId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "groups"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "member_id",
+          "nameInDart": "memberId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 1655,
+            "name": "memberId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "members"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [
+        {
+          "type": "primary_key",
+          "columns": [
+            "group_id",
+            "member_id"
+          ]
+        }
+      ],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "GroupMembers",
+      "row_class_name": "GroupMember",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "expenses": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "expenses"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 2082,
+        "name": "Expenses"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "categories"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "groups"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "members"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "accounts"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "recurring_rules"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2123,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "title",
+          "nameInDart": "title",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2175,
+            "name": "title"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "amount",
+          "nameInDart": "amount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2211,
+            "name": "amount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "category_id",
+          "nameInDart": "categoryId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2329,
+            "name": "categoryId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "categories"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "date",
+          "nameInDart": "date",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2417,
+            "name": "date"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "note",
+          "nameInDart": "note",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2456,
+            "name": "note"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "receipt_path",
+          "nameInDart": "receiptPath",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2502,
+            "name": "receiptPath"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "needs_review",
+          "nameInDart": "needsReview",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2715,
+            "name": "needsReview"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "group_id",
+          "nameInDart": "groupId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 2863,
+            "name": "groupId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "groups"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "paid_by_member_id",
+          "nameInDart": "paidByMemberId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 3004,
+            "name": "paidByMemberId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "members"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "split_type",
+          "nameInDart": "splitType",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 3089,
+            "name": "splitType"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "('equal')"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "account_id",
+          "nameInDart": "accountId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 3274,
+            "name": "accountId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "accounts"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "recurring_rule_id",
+          "nameInDart": "recurringRuleId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 3428,
+            "name": "recurringRuleId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "recurring_rules"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_deleted",
+          "nameInDart": "isDeleted",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 3591,
+            "name": "isDeleted"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": true,
+          "nameInSql": "deleted_at",
+          "nameInDart": "deletedAt",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 3673,
+            "name": "deletedAt"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "created_at",
+          "nameInDart": "createdAt",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 3733,
+            "name": "createdAt"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Expenses",
+      "row_class_name": "Expense",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": [
+        "idx_expenses_date",
+        "idx_expenses_category",
+        "idx_expenses_group"
+      ]
+    },
+    "accounts": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "accounts"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 9869,
+        "name": "Accounts"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 9910,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "name",
+          "nameInDart": "name",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 9962,
+            "name": "name"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "type",
+          "nameInDart": "type",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 9997,
+            "name": "type"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "('cash')"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "opening_balance",
+          "nameInDart": "openingBalance",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10105,
+            "name": "openingBalance"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(0)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "icon",
+          "nameInDart": "icon",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10181,
+            "name": "icon"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_archived",
+          "nameInDart": "isArchived",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10227,
+            "name": "isArchived"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "created_at",
+          "nameInDart": "createdAt",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10310,
+            "name": "createdAt"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Accounts",
+      "row_class_name": "Account",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "recurring_rules": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "recurring_rules"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 11165,
+        "name": "RecurringRules"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "categories"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "income_sources"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11212,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "title",
+          "nameInDart": "title",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11264,
+            "name": "title"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "amount",
+          "nameInDart": "amount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11300,
+            "name": "amount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "type",
+          "nameInDart": "type",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11337,
+            "name": "type"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "category_id",
+          "nameInDart": "categoryId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11419,
+            "name": "categoryId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "categories"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "source_id",
+          "nameInDart": "sourceId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11523,
+            "name": "sourceId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "income_sources"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "frequency",
+          "nameInDart": "frequency",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11608,
+            "name": "frequency"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "next_due_date",
+          "nameInDart": "nextDueDate",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11703,
+            "name": "nextDueDate"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": true,
+          "nameInSql": "end_date",
+          "nameInDart": "endDate",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11753,
+            "name": "endDate"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "auto_create",
+          "nameInDart": "autoCreate",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11912,
+            "name": "autoCreate"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(true)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_active",
+          "nameInDart": "isActive",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 11990,
+            "name": "isActive"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(true)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "created_at",
+          "nameInDart": "createdAt",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 12071,
+            "name": "createdAt"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "RecurringRules",
+      "row_class_name": "RecurringRule",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "income_sources": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "income_sources"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 6843,
+        "name": "IncomeSources"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6889,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "name",
+          "nameInDart": "name",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6941,
+            "name": "name"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "icon",
+          "nameInDart": "icon",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6976,
+            "name": "icon"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_archived",
+          "nameInDart": "isArchived",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7011,
+            "name": "isArchived"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "IncomeSources",
+      "row_class_name": "IncomeSource",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "expense_splits": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "expense_splits"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 4030,
+        "name": "ExpenseSplits"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expenses"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "members"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4076,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "expense_id",
+          "nameInDart": "expenseId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4127,
+            "name": "expenseId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "expenses"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "member_id",
+          "nameInDart": "memberId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4195,
+            "name": "memberId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "members"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "share_amount",
+          "nameInDart": "shareAmount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4262,
+            "name": "shareAmount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_settled",
+          "nameInDart": "isSettled",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4333,
+            "name": "isSettled"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "ExpenseSplits",
+      "row_class_name": "ExpenseSplit",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": [
+        "idx_splits_expense",
+        "idx_splits_member"
+      ]
+    },
+    "budgets": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "budgets"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 4457,
+        "name": "Budgets"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "categories"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4497,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "category_id",
+          "nameInDart": "categoryId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4548,
+            "name": "categoryId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "categories"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "limit_amount",
+          "nameInDart": "limitAmount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4620,
+            "name": "limitAmount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "month",
+          "nameInDart": "month",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4662,
+            "name": "month"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Budgets",
+      "row_class_name": "Budget",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "settlements": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "settlements"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 4774,
+        "name": "Settlements"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "groups"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "members"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4818,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "group_id",
+          "nameInDart": "groupId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4869,
+            "name": "groupId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "groups"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "from_member_id",
+          "nameInDart": "fromMemberId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 4973,
+            "name": "fromMemberId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": "settlementsAsDebtor",
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "members"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "to_member_id",
+          "nameInDart": "toMemberId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 5085,
+            "name": "toMemberId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": "settlementsAsCreditor",
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "members"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "amount",
+          "nameInDart": "amount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 5154,
+            "name": "amount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "date",
+          "nameInDart": "date",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 5195,
+            "name": "date"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Settlements",
+      "row_class_name": "Settlement",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "users": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "users"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 6034,
+        "name": "Users"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6072,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "name",
+          "nameInDart": "name",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6124,
+            "name": "name"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "('Me')"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "currency",
+          "nameInDart": "currency",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6193,
+            "name": "currency"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "('PKR')"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "avatar_path",
+          "nameInDart": "avatarPath",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6267,
+            "name": "avatarPath"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "pin_hash",
+          "nameInDart": "pinHash",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6446,
+            "name": "pinHash"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "biometric_enabled",
+          "nameInDart": "biometricEnabled",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6532,
+            "name": "biometricEnabled"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "app_lock_enabled",
+          "nameInDart": "appLockEnabled",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 6623,
+            "name": "appLockEnabled"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Users",
+      "row_class_name": "User",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "income": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "income"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 7163,
+        "name": "Income"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "income_sources"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "accounts"
+        },
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "recurring_rules"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7202,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "title",
+          "nameInDart": "title",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7254,
+            "name": "title"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "amount",
+          "nameInDart": "amount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7290,
+            "name": "amount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "source_id",
+          "nameInDart": "sourceId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7326,
+            "name": "sourceId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "income_sources"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "date",
+          "nameInDart": "date",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7403,
+            "name": "date"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "note",
+          "nameInDart": "note",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7442,
+            "name": "note"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "account_id",
+          "nameInDart": "accountId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7542,
+            "name": "accountId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "accounts"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": true,
+          "nameInSql": "recurring_rule_id",
+          "nameInDart": "recurringRuleId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7622,
+            "name": "recurringRuleId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "recurring_rules"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_deleted",
+          "nameInDart": "isDeleted",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7721,
+            "name": "isDeleted"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": true,
+          "nameInSql": "deleted_at",
+          "nameInDart": "deletedAt",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7803,
+            "name": "deletedAt"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "created_at",
+          "nameInDart": "createdAt",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 7863,
+            "name": "createdAt"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Income",
+      "row_class_name": "IncomeData",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": [
+        "idx_income_date"
+      ]
+    },
+    "savings_goals": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "savings_goals"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 7989,
+        "name": "SavingsGoals"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8034,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "title",
+          "nameInDart": "title",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8086,
+            "name": "title"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "target_amount",
+          "nameInDart": "targetAmount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8122,
+            "name": "targetAmount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "saved_amount",
+          "nameInDart": "savedAmount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8165,
+            "name": "savedAmount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(0)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": true,
+          "nameInSql": "target_date",
+          "nameInDart": "targetDate",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8242,
+            "name": "targetDate"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "icon",
+          "nameInDart": "icon",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8298,
+            "name": "icon"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "cover_image_path",
+          "nameInDart": "coverImagePath",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8498,
+            "name": "coverImagePath"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "bool"
+          },
+          "nullable": false,
+          "nameInSql": "is_completed",
+          "nameInDart": "isCompleted",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8554,
+            "name": "isCompleted"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              "const ",
+              {
+                "lexeme": "Constant",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              },
+              "(false)"
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "created_at",
+          "nameInDart": "createdAt",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8638,
+            "name": "createdAt"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "SavingsGoals",
+      "row_class_name": "SavingsGoal",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "savings_contributions": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "savings_contributions"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 8801,
+        "name": "SavingsContributions"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "savings_goals"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8854,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "goal_id",
+          "nameInDart": "goalId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8905,
+            "name": "goalId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "savings_goals"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "amount",
+          "nameInDart": "amount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 8975,
+            "name": "amount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "date",
+          "nameInDart": "date",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 9016,
+            "name": "date"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "note",
+          "nameInDart": "note",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 9087,
+            "name": "note"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "SavingsContributions",
+      "row_class_name": "SavingsContribution",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "app_settings": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "app_settings"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 9420,
+        "name": "AppSettings"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "key",
+          "nameInDart": "key",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 9465,
+            "name": "key"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "value",
+          "nameInDart": "value",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 9499,
+            "name": "value"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [
+        {
+          "type": "primary_key",
+          "columns": [
+            "key"
+          ]
+        }
+      ],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "AppSettings",
+      "row_class_name": "AppSetting",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "account_transfers": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "account_transfers"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 10487,
+        "name": "AccountTransfers"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "accounts"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10536,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "from_account_id",
+          "nameInDart": "fromAccountId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10620,
+            "name": "fromAccountId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": "transfersOut",
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "accounts"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "to_account_id",
+          "nameInDart": "toAccountId",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10724,
+            "name": "toAccountId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": "transfersIn",
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:bill_splitter/data/local/database.dart",
+                  "name": "accounts"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "amount",
+          "nameInDart": "amount",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10795,
+            "name": "amount"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "dateTime"
+          },
+          "nullable": false,
+          "nameInSql": "date",
+          "nameInDart": "date",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10836,
+            "name": "date"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": {
+            "elements": [
+              {
+                "lexeme": "currentDateAndTime",
+                "import_uri": "package:drift/src/runtime/query_builder/query_builder.dart"
+              }
+            ]
+          },
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "note",
+          "nameInDart": "note",
+          "declaration": {
+            "source_uri": "package:bill_splitter/data/local/database.dart",
+            "offset": 10907,
+            "name": "note"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "AccountTransfers",
+      "row_class_name": "AccountTransfer",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "idx_expenses_date": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "idx_expenses_date"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 2082,
+        "name": "Expenses"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expenses"
+        }
+      ],
+      "type": "index",
+      "sql": null,
+      "columns": [
+        {
+          "column": "date",
+          "order_by": null
+        }
+      ],
+      "unique": false
+    },
+    "idx_expenses_category": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "idx_expenses_category"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 2082,
+        "name": "Expenses"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expenses"
+        }
+      ],
+      "type": "index",
+      "sql": null,
+      "columns": [
+        {
+          "column": "category_id",
+          "order_by": null
+        }
+      ],
+      "unique": false
+    },
+    "idx_expenses_group": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "idx_expenses_group"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 2082,
+        "name": "Expenses"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expenses"
+        }
+      ],
+      "type": "index",
+      "sql": null,
+      "columns": [
+        {
+          "column": "group_id",
+          "order_by": null
+        }
+      ],
+      "unique": false
+    },
+    "idx_splits_expense": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "idx_splits_expense"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 4030,
+        "name": "ExpenseSplits"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expense_splits"
+        }
+      ],
+      "type": "index",
+      "sql": null,
+      "columns": [
+        {
+          "column": "expense_id",
+          "order_by": null
+        }
+      ],
+      "unique": false
+    },
+    "idx_splits_member": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "idx_splits_member"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 4030,
+        "name": "ExpenseSplits"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "expense_splits"
+        }
+      ],
+      "type": "index",
+      "sql": null,
+      "columns": [
+        {
+          "column": "member_id",
+          "order_by": null
+        }
+      ],
+      "unique": false
+    },
+    "idx_income_date": {
+      "id": {
+        "library_uri": "package:bill_splitter/data/local/database.dart",
+        "name": "idx_income_date"
+      },
+      "declaration": {
+        "source_uri": "package:bill_splitter/data/local/database.dart",
+        "offset": 7163,
+        "name": "Income"
+      },
+      "references": [
+        {
+          "library_uri": "package:bill_splitter/data/local/database.dart",
+          "name": "income"
+        }
+      ],
+      "type": "index",
+      "sql": null,
+      "columns": [
+        {
+          "column": "date",
+          "order_by": null
+        }
+      ],
+      "unique": false
+    }
+  },
+  "imports": [
+    "package:drift/drift.dart"
+  ]
+}
