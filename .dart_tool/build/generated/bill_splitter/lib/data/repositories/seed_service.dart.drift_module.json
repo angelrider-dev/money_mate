@@ -1,7 +1,0 @@
-{
-  "elements": {},
-  "imports": [
-    "package:drift/drift.dart",
-    "package:bill_splitter/data/local/database.dart"
-  ]
-}
