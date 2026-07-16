@@ -3,6 +3,8 @@ import '../widgets/app_shell.dart';
 import '../../features/dashboard/dashboard_screen.dart';
 import '../../features/expenses/list/expense_list_screen.dart';
 import '../../features/expenses/add_edit/add_edit_expense_screen.dart';
+import '../../features/income/list/income_list_screen.dart';
+import '../../features/income/add_edit/add_edit_income_screen.dart';
 
 /// 5-tab bottom nav: Dashboard, Expenses, Split, Analytics, Settings.
 /// Everything else (Income, Savings, Budgets, Accounts, Recurring, Backup,
@@ -35,6 +37,22 @@ final appRouter = GoRouter(
         ),
         // '/split', '/analytics', '/settings' routes added as those
         // features are built out in later phases.
+        GoRoute(
+          path: '/income',
+          builder: (context, state) => const IncomeListScreen(),
+          routes: [
+            GoRoute(
+              path: 'add',
+              builder: (context, state) => const AddEditIncomeScreen(),
+            ),
+            GoRoute(
+              path: 'edit/:id',
+              builder: (context, state) => AddEditIncomeScreen(
+                incomeId: int.parse(state.pathParameters['id']!),
+              ),
+            ),
+          ],
+        ),
       ],
     ),
   ],

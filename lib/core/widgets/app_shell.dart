@@ -79,7 +79,8 @@ class AppDrawer extends StatelessWidget {
                 ],
               ),
             ),
-            _drawerTile(context, Icons.account_balance_wallet_outlined, 'Income', '/income'),
+            _drawerTile(context, Icons.account_balance_wallet_outlined, 'Income', '/income',
+                enabled: true),
             _drawerTile(context, Icons.savings_outlined, 'Savings Goals', '/savings'),
             _drawerTile(context, Icons.pie_chart_outline, 'Budgets', '/budgets'),
             const Divider(),
@@ -95,14 +96,18 @@ class AppDrawer extends StatelessWidget {
     );
   }
 
-  Widget _drawerTile(BuildContext context, IconData icon, String label, String route) {
+  Widget _drawerTile(BuildContext context, IconData icon, String label, String route,
+      {bool enabled = false}) {
     return ListTile(
       leading: Icon(icon),
       title: Text(label, style: AppTypography.bodyLg),
-      onTap: () {
-        Navigator.of(context).pop();
-        // Routes for these screens are added as each feature is built.
-      },
+      enabled: enabled,
+      onTap: enabled
+          ? () {
+              Navigator.of(context).pop();
+              context.push(route);
+            }
+          : null,
     );
   }
 }
