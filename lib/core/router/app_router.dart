@@ -5,6 +5,11 @@ import '../../features/expenses/list/expense_list_screen.dart';
 import '../../features/expenses/add_edit/add_edit_expense_screen.dart';
 import '../../features/income/list/income_list_screen.dart';
 import '../../features/income/add_edit/add_edit_income_screen.dart';
+import '../../features/split/groups_list/groups_list_screen.dart';
+import '../../features/split/create_group/create_group_screen.dart';
+import '../../features/split/group_details/group_details_screen.dart';
+import '../../features/split/add_group_expense/add_group_expense_screen.dart';
+import '../../features/split/settle_up/settle_up_screen.dart';
 
 /// 5-tab bottom nav: Dashboard, Expenses, Split, Analytics, Settings.
 /// Everything else (Income, Savings, Budgets, Accounts, Recurring, Backup,
@@ -35,7 +40,37 @@ final appRouter = GoRouter(
             ),
           ],
         ),
-        // '/split', '/analytics', '/settings' routes added as those
+        GoRoute(
+          path: '/split',
+          builder: (context, state) => const GroupsListScreen(),
+          routes: [
+            GoRoute(
+              path: 'create',
+              builder: (context, state) => const CreateGroupScreen(),
+            ),
+            GoRoute(
+              path: ':id',
+              builder: (context, state) => GroupDetailsScreen(
+                groupId: int.parse(state.pathParameters['id']!),
+              ),
+              routes: [
+                GoRoute(
+                  path: 'add-expense',
+                  builder: (context, state) => AddGroupExpenseScreen(
+                    groupId: int.parse(state.pathParameters['id']!),
+                  ),
+                ),
+                GoRoute(
+                  path: 'settle-up',
+                  builder: (context, state) => SettleUpScreen(
+                    groupId: int.parse(state.pathParameters['id']!),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+        // '/analytics', '/settings' routes added as those
         // features are built out in later phases.
         GoRoute(
           path: '/income',
