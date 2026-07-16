@@ -10,6 +10,8 @@ import '../../features/split/create_group/create_group_screen.dart';
 import '../../features/split/group_details/group_details_screen.dart';
 import '../../features/split/add_group_expense/add_group_expense_screen.dart';
 import '../../features/split/settle_up/settle_up_screen.dart';
+import '../../features/categories/list/categories_list_screen.dart';
+import '../../features/categories/add_edit/add_edit_category_screen.dart';
 
 /// 5-tab bottom nav: Dashboard, Expenses, Split, Analytics, Settings.
 /// Everything else (Income, Savings, Budgets, Accounts, Recurring, Backup,
@@ -72,6 +74,22 @@ final appRouter = GoRouter(
         ),
         // '/analytics', '/settings' routes added as those
         // features are built out in later phases.
+        GoRoute(
+          path: '/categories',
+          builder: (context, state) => const CategoriesListScreen(),
+          routes: [
+            GoRoute(
+              path: 'add',
+              builder: (context, state) => const AddEditCategoryScreen(),
+            ),
+            GoRoute(
+              path: 'edit/:id',
+              builder: (context, state) => AddEditCategoryScreen(
+                categoryId: int.parse(state.pathParameters['id']!),
+              ),
+            ),
+          ],
+        ),
         GoRoute(
           path: '/income',
           builder: (context, state) => const IncomeListScreen(),
