@@ -14,6 +14,9 @@ import '../../features/categories/list/categories_list_screen.dart';
 import '../../features/categories/add_edit/add_edit_category_screen.dart';
 import '../../features/budgets/list/budgets_list_screen.dart';
 import '../../features/budgets/set_budget/set_budget_screen.dart';
+import '../../features/savings/list/savings_goals_list_screen.dart';
+import '../../features/savings/add_edit/add_edit_goal_screen.dart';
+import '../../features/savings/details/goal_details_screen.dart';
 
 /// 5-tab bottom nav: Dashboard, Expenses, Split, Analytics, Settings.
 /// Everything else (Income, Savings, Budgets, Accounts, Recurring, Backup,
@@ -85,6 +88,22 @@ final appRouter = GoRouter(
               builder: (context, state) => SetBudgetScreen(
                 month: state.uri.queryParameters['month'] ??
                     '${DateTime.now().year}-${DateTime.now().month.toString().padLeft(2, '0')}',
+              ),
+            ),
+          ],
+        ),
+        GoRoute(
+          path: '/savings',
+          builder: (context, state) => const SavingsGoalsListScreen(),
+          routes: [
+            GoRoute(
+              path: 'add',
+              builder: (context, state) => const AddEditGoalScreen(),
+            ),
+            GoRoute(
+              path: ':id',
+              builder: (context, state) => GoalDetailsScreen(
+                goalId: int.parse(state.pathParameters['id']!),
               ),
             ),
           ],
