@@ -18,6 +18,10 @@ import '../../features/savings/list/savings_goals_list_screen.dart';
 import '../../features/savings/add_edit/add_edit_goal_screen.dart';
 import '../../features/savings/details/goal_details_screen.dart';
 import '../../features/analytics/analytics_screen.dart';
+import '../../features/settings/main/settings_screen.dart';
+import '../../features/settings/profile/profile_edit_screen.dart';
+import '../../features/settings/backup/backup_restore_screen.dart';
+import '../../features/settings/about/about_screen.dart';
 
 /// 5-tab bottom nav: Dashboard, Expenses, Split, Analytics, Settings.
 /// Everything else (Income, Savings, Budgets, Accounts, Recurring, Backup,
@@ -78,7 +82,24 @@ final appRouter = GoRouter(
             ),
           ],
         ),
-        // '/settings' routes added as that feature is built out in a later phase.
+        GoRoute(
+          path: '/settings',
+          builder: (context, state) => const SettingsScreen(),
+          routes: [
+            GoRoute(
+              path: 'profile',
+              builder: (context, state) => const ProfileEditScreen(),
+            ),
+            GoRoute(
+              path: 'backup',
+              builder: (context, state) => const BackupRestoreScreen(),
+            ),
+            GoRoute(
+              path: 'about',
+              builder: (context, state) => const AboutScreen(),
+            ),
+          ],
+        ),
         GoRoute(
           path: '/analytics',
           builder: (context, state) => const AnalyticsScreen(),

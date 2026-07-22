@@ -6,6 +6,7 @@ import '../repositories/budget_repository.dart';
 import '../repositories/savings_goal_repository.dart';
 import '../repositories/account_repository.dart';
 import '../repositories/recurring_rule_repository.dart';
+import '../repositories/user_repository.dart';
 import 'database_provider.dart';
 import 'expense_providers.dart';
 
@@ -94,4 +95,13 @@ final recurringRuleRepositoryProvider = Provider<RecurringRuleRepository>((ref) 
 
 final activeRecurringRulesProvider = StreamProvider<List<RecurringRule>>((ref) {
   return ref.watch(recurringRuleRepositoryProvider).watchActiveRules();
+});
+
+// ── User / Profile ────────────────────────────────────
+final userRepositoryProvider = Provider<UserRepository>((ref) {
+  return UserRepository(ref.watch(databaseProvider));
+});
+
+final currentUserProvider = StreamProvider((ref) {
+  return ref.watch(userRepositoryProvider).watchUser();
 });
