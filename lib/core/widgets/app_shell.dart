@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../theme/app_theme.dart';
+import '../../data/providers/repository_providers.dart';
 
 class AppShell extends StatelessWidget {
   final Widget child;
@@ -52,11 +54,14 @@ class AppShell extends StatelessWidget {
 }
 
 /// Side drawer per design.md — secondary destinations not on the bottom nav.
-class AppDrawer extends StatelessWidget {
+class AppDrawer extends ConsumerWidget {
   const AppDrawer({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final multiAccountAsync = ref.watch(multiAccountEnabledProvider);
+    final multiAccountEnabled = multiAccountAsync.value ?? false;
+
     return Drawer(
       backgroundColor: AppColors.surface,
       child: SafeArea(
@@ -86,9 +91,13 @@ class AppDrawer extends StatelessWidget {
             _drawerTile(context, Icons.pie_chart_outline, 'Budgets', '/budgets',
                 enabled: true),
             const Divider(),
-            _drawerTile(
-                context, Icons.account_balance_outlined, 'Accounts', '/accounts'),
-            _drawerTile(context, Icons.autorenew, 'Recurring Transactions', '/recurring'),
+            // Accounts only shown once multi-account is enabled in Settings.
+            if (multiAccountEnabled)
+              _drawerTile(
+                  context, Icons.account_balance_outlined, 'Accounts', '/accounts',
+                  enabled: true),
+            _drawerTile(context, Icons.autorenew, 'Recurring Transactions', '/recurring',
+                enabled: true),
             const Divider(),
             _drawerTile(context, Icons.backup_outlined, 'Backup & Restore', '/settings/backup',
                 enabled: true),

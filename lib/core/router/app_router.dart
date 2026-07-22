@@ -22,6 +22,11 @@ import '../../features/settings/main/settings_screen.dart';
 import '../../features/settings/profile/profile_edit_screen.dart';
 import '../../features/settings/backup/backup_restore_screen.dart';
 import '../../features/settings/about/about_screen.dart';
+import '../../features/accounts/list/accounts_list_screen.dart';
+import '../../features/accounts/add_edit/add_edit_account_screen.dart';
+import '../../features/accounts/transfer/transfer_screen.dart';
+import '../../features/recurring/list/recurring_rules_list_screen.dart';
+import '../../features/recurring/add_edit/add_edit_recurring_rule_screen.dart';
 
 /// 5-tab bottom nav: Dashboard, Expenses, Split, Analytics, Settings.
 /// Everything else (Income, Savings, Budgets, Accounts, Recurring, Backup,
@@ -79,6 +84,30 @@ final appRouter = GoRouter(
                   ),
                 ),
               ],
+            ),
+          ],
+        ),
+        GoRoute(
+          path: '/accounts',
+          builder: (context, state) => const AccountsListScreen(),
+          routes: [
+            GoRoute(
+              path: 'add',
+              builder: (context, state) => const AddEditAccountScreen(),
+            ),
+            GoRoute(
+              path: 'transfer',
+              builder: (context, state) => const TransferScreen(),
+            ),
+          ],
+        ),
+        GoRoute(
+          path: '/recurring',
+          builder: (context, state) => const RecurringRulesListScreen(),
+          routes: [
+            GoRoute(
+              path: 'add',
+              builder: (context, state) => const AddEditRecurringRuleScreen(),
             ),
           ],
         ),
