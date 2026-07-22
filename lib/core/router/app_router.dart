@@ -17,6 +17,7 @@ import '../../features/budgets/set_budget/set_budget_screen.dart';
 import '../../features/savings/list/savings_goals_list_screen.dart';
 import '../../features/savings/add_edit/add_edit_goal_screen.dart';
 import '../../features/savings/details/goal_details_screen.dart';
+import '../../features/analytics/analytics_screen.dart';
 
 /// 5-tab bottom nav: Dashboard, Expenses, Split, Analytics, Settings.
 /// Everything else (Income, Savings, Budgets, Accounts, Recurring, Backup,
@@ -77,8 +78,11 @@ final appRouter = GoRouter(
             ),
           ],
         ),
-        // '/analytics', '/settings' routes added as those
-        // features are built out in later phases.
+        // '/settings' routes added as that feature is built out in a later phase.
+        GoRoute(
+          path: '/analytics',
+          builder: (context, state) => const AnalyticsScreen(),
+        ),
         GoRoute(
           path: '/budgets',
           builder: (context, state) => const BudgetsListScreen(),
