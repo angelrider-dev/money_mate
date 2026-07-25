@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../core/theme/app_theme.dart';
 import '../../../data/providers/repository_providers.dart';
 
 class TransferScreen extends ConsumerStatefulWidget {
