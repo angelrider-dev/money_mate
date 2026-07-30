@@ -4,7 +4,16 @@ import 'package:go_router/go_router.dart';
 import '../theme/app_theme.dart';
 import '../../data/providers/repository_providers.dart';
 
-class AppShell extends StatelessWidget {
+/// FIX: each tab screen (Dashboard, Expenses, etc.) has its own nested
+/// Scaffold for its AppBar. Scaffold.of(context) inside those screens finds
+/// THAT Scaffold, not this outer one — so openDrawer() from a nested screen
+/// was silently doing nothing. This shared key targets the real Scaffold
+/// directly, regardless of which screen's menu button is tapped.
+final appScaffoldKeyProvider = Provider<GlobalKey<ScaffoldState>>((ref) {
+  return GlobalKey<ScaffoldState>();
+});
+
+class AppShell extends ConsumerWidget {
   final Widget child;
   const AppShell({super.key, required this.child});
 
@@ -17,11 +26,13 @@ class AppShell extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final location = GoRouterState.of(context).uri.toString();
     final currentIndex = _indexForLocation(location);
+    final scaffoldKey = ref.watch(appScaffoldKeyProvider);
 
     return Scaffold(
+      key: scaffoldKey,
       drawer: const AppDrawer(),
       body: child,
       bottomNavigationBar: BottomNavigationBar(

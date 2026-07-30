@@ -22,6 +22,7 @@ import '../../features/settings/main/settings_screen.dart';
 import '../../features/settings/profile/profile_edit_screen.dart';
 import '../../features/settings/backup/backup_restore_screen.dart';
 import '../../features/settings/about/about_screen.dart';
+import '../../features/settings/notifications/notification_settings_screen.dart';
 import '../../features/accounts/list/accounts_list_screen.dart';
 import '../../features/accounts/add_edit/add_edit_account_screen.dart';
 import '../../features/accounts/transfer/transfer_screen.dart';
@@ -126,6 +127,10 @@ final appRouter = GoRouter(
             GoRoute(
               path: 'about',
               builder: (context, state) => const AboutScreen(),
+            ),
+            GoRoute(
+              path: 'notifications',
+              builder: (context, state) => const NotificationSettingsScreen(),
             ),
           ],
         ),

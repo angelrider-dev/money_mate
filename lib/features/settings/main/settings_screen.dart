@@ -86,7 +86,7 @@ class SettingsScreen extends ConsumerWidget {
                   leading: const Icon(Icons.notifications_outlined),
                   title: const Text('Notifications'),
                   trailing: const Icon(Icons.chevron_right),
-                  onTap: () {},
+                  onTap: () => context.push('/settings/notifications'),
                 ),
               ],
             ),

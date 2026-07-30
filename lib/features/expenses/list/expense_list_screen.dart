@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/app_shell.dart';
 import '../../../data/providers/expense_providers.dart';
 import '../../../data/local/database.dart';
 
@@ -16,11 +17,9 @@ class ExpenseListScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Expenses'),
-        leading: Builder(
-          builder: (context) => IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () => Scaffold.of(context).openDrawer(),
-          ),
+        leading: IconButton(
+          icon: const Icon(Icons.menu),
+          onPressed: () => ref.read(appScaffoldKeyProvider).currentState?.openDrawer(),
         ),
         actions: [
           IconButton(

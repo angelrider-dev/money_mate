@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/app_shell.dart';
 import '../../data/providers/expense_providers.dart';
 
 class DashboardScreen extends ConsumerWidget {
@@ -13,11 +14,9 @@ class DashboardScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        leading: Builder(
-          builder: (context) => IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () => Scaffold.of(context).openDrawer(),
-          ),
+        leading: IconButton(
+          icon: const Icon(Icons.menu),
+          onPressed: () => ref.read(appScaffoldKeyProvider).currentState?.openDrawer(),
         ),
         title: const Text('MoneyMate'),
         actions: [
